@@ -37,7 +37,7 @@ li {
   --accent-color: transparent;
   --accent-border-color: var(--text-color);
   --marker: url(../images/marker-dark.svg);
-  --link-hover: #b3b3b3;
+  --link-hover: #b3b3b380;;
 }
 
 .page {
@@ -72,10 +72,9 @@ li {
   cursor: pointer;
 }
 
-.header__logo:focus-visible {
+/* .header__logo:focus-visible {
   outline: none;
-}
-
+} */
 
 .header__menu {
   display: flex;
@@ -113,6 +112,7 @@ li {
 .content__link:focus-visible {
   outline: 1px solid currentColor;
 }
+
 
 .header__theme-button_is-active {
   font-weight: 700;
@@ -163,9 +163,14 @@ li {
 
 .content__link {
   color: inherit;
+  text-decoration-color: #b3b3b34d;
 }
 .content__link:hover {
   text-decoration-color: var(--link-hover);
+}
+
+.content__link:focus-visible {
+  text-decoration-color: var(--text-hover);
 }
 
 .content__blockquote {
